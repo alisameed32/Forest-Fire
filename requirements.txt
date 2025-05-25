@@ -1,0 +1,8 @@
+pandas
+numpy
+seaborn
+Scikit-learn
+matplotlib
+flask
+flask_mail
+dotenv
