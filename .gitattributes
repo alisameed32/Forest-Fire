@@ -1,0 +1,19 @@
+# Python and Flask backend
+*.py linguist-language=Python
+*.jinja linguist-language=HTML
+
+# Jupyter Notebooks
+*.ipynb linguist-language=Jupyter Notebook
+
+# Frontend (Flask uses these in templates/static folders)
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
+templates/** linguist-language=HTML
+static/** linguist-language=JavaScript
+
+# Ignore virtual environments and binary/vendor files from stats
+venv/** linguist-vendored
+*.so linguist-vendored
+*.dll linguist-vendored
+*.pyd linguist-vendored
