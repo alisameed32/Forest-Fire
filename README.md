@@ -2,7 +2,7 @@
 
 This project predicts the risk of forest fires in Algeria using various machine learning models, with **Ridge Regression** identified as the best-performing algorithm. It follows a complete ML pipeline and is deployed as a Flask web application with a responsive frontend.
 
-![alt text](<Screenshot 2025-06-09 145506.png>)
+![Home Page With Dark Theme](<static/assets/preview/Screenshot 2025-06-09 145506.png>)
 
 > This project is part of the **"OpenAI Data Science and Machine Learning"** course by **Krish Naik** on **Udemy**.
 
@@ -116,19 +116,19 @@ The **Ridge Regression** model gave the best performance and was selected for de
 
 ### Home
 
-![alt text](<Screenshot 2025-06-09 145352.png>)
+![Home Page](<static/assets/preview/Screenshot 2025-06-09 145352.png>)
 
 ### Predict
 
-![alt text](<Screenshot 2025-06-09 145529.png>)
+![Predict Page](<static/assets/preview/Screenshot 2025-06-09 145529.png>)
 
 ### About
 
-![alt text](<Screenshot 2025-06-09 145422.png>)
+![About Page](<static/assets/preview/Screenshot 2025-06-09 145422.png>)
 
 ### Contact 
 
-![alt text](<Screenshot 2025-06-09 145437.png>)
+![Contact Page](<static/assets/preview/Screenshot 2025-06-09 145437.png>)
 
 ## 🚧 Future Plans
 
