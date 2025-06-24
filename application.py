@@ -18,9 +18,11 @@ standard_scaler = pickle.load(open('models/scaler.pkl', 'rb'))
 application = Flask(__name__)
 app = application
 
+load_dotenv() 
+
 app.config.update(
     MAIL_SERVER = 'smtp.gmail.com',
-    MAIL_PORT = '465',
+    MAIL_PORT = 465,
     MAIL_USE_SSL = True,
     MAIL_USERNAME = os.environ.get("EMAIL_USER"),
     MAIL_PASSWORD = os.environ.get("EMAIL_PASS")
@@ -31,11 +33,17 @@ mail = Mail(app)
 @app.route('/',methods=['GET','POST'])
 def index():
     if request.method=='POST':
-        mail.send_message('New message from ' + request.form.get('name'), 
-                           sender = os.environ.get("EMAIL_USER"),
-                           recipients = [os.environ.get("EMAIL_USER")],
-                           body = request.form.get('msg') + "\n" 
-                        )
+        name = request.form.get('name')
+        email = request.form.get('email')
+        subject = request.form.get('subject')
+        message = request.form.get('msg')
+
+        mail.send_message(
+                subject=f"New message from {name}: {subject}",
+                sender=os.environ.get("EMAIL_USER"),
+                recipients=[os.environ.get("EMAIL_USER")],
+                body=f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}"
+            )
         return render_template('index.html')
     else:
         return render_template('index.html')
