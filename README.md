@@ -84,7 +84,7 @@ The **Ridge Regression** model gave the best performance and was selected for de
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/forest-fire-prediction.git
+   git clone https://github.com/alisameed32/forest-fire-prediction.git
    cd forest-fire-prediction
    ```
 
